@@ -25,6 +25,8 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
+import Main from './src/navigation/Main'
+
 type SectionProps = PropsWithChildren<{
   title: string;
 }>;
@@ -63,7 +65,8 @@ function App(): React.JSX.Element {
   };
 
   return (
-    <SafeAreaView style={backgroundStyle}>
+
+   /* <SafeAreaView style={backgroundStyle}>
       <StatusBar
         barStyle={isDarkMode ? 'light-content' : 'dark-content'}
         backgroundColor={backgroundStyle.backgroundColor}
@@ -93,6 +96,9 @@ function App(): React.JSX.Element {
         </View>
       </ScrollView>
     </SafeAreaView>
+    */
+  <Main/>
+
   );
 }
 
